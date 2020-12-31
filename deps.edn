@@ -1,5 +1,5 @@
 ;; see https://github.com/seancorfield/dot-clojure
-{:mvn/repos {"sonatype" {:url "https://oss.sonatype.org/content/repositories/snapshots/"}}
+{:mvn/repos {"AliMvnCentral" {:url "http://maven.aliyun.com/nexus/content/groups/public/"}}}
  :aliases
  {;; project creation from templates:
   ;; - see https://github.com/seancorfield/clj-new
