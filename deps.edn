@@ -1,5 +1,5 @@
 ;; see https://github.com/seancorfield/dot-clojure
-{:mvn/repos {"AliMvnCentral" {:url "http://maven.aliyun.com/nexus/content/groups/public/"}}}
+{:mvn/repos {"AliMvnCentral" {:url "http://maven.aliyun.com/nexus/content/groups/public/"}}
  :aliases
  {;; project creation from templates:
   ;; - see https://github.com/seancorfield/clj-new
@@ -219,4 +219,4 @@
 
   ;; - inspired by Ruby's -pne command line option which lets you process lines of stdin bound to $_
   ;; - usage: cat file-of-numbers.txt | clj -Mpne -e '($ (-> $_ Long/parseLong inc))'
-  :pne {:main-opts,["-e","(defmacro,$,[&,body],(list,'while,(list,'when-let,'[$_,(read-line)],(let,[v,(gensym)],(list,'let,(vector,v,(list*,'do,body)),(list,'println,v))),'$_)))"]}}
+  :pne {:main-opts,["-e","(defmacro,$,[&,body],(list,'while,(list,'when-let,'[$_,(read-line)],(let,[v,(gensym)],(list,'let,(vector,v,(list*,'do,body)),(list,'println,v))),'$_)))"]}}}
